@@ -6,14 +6,14 @@
   if (self = [super init]) {
     self.showsVolumeSlider = NO;
     self.showsRouteButton = YES;
-
-    [self setRouteButtonImage:nil forState:UIControlStateNormal];
-    [self setRouteButtonImage:nil forState:UIControlStateHighlighted];
-    [self setRouteButtonImage:nil forState:UIControlStateApplication];
-    [self setRouteButtonImage:nil forState:UIControlStateSelected];
-    [self setRouteButtonImage:nil forState:UIControlStateReserved];
-    [self setRouteButtonImage:nil forState:UIControlStateDisabled];
-    [self setRouteButtonImage:nil forState:UIControlStateFocused];
+      
+      [self setRouteButtonImage:NULL forState:UIControlStateNormal];
+      [self setRouteButtonImage:NULL forState:UIControlStateHighlighted];
+      [self setRouteButtonImage:NULL forState:UIControlStateApplication];
+      [self setRouteButtonImage:NULL forState:UIControlStateSelected];
+      [self setRouteButtonImage:NULL forState:UIControlStateReserved];
+      [self setRouteButtonImage:NULL forState:UIControlStateDisabled];
+      [self setRouteButtonImage:NULL forState:UIControlStateFocused];
   }
   return self;
 }
