@@ -6,6 +6,7 @@ RCT_EXPORT_MODULE()
 
 - (UIView *)view
 {
+    UIView *wrapperView = [[UIView alloc] init];
     MPVolumeView *audioRouteView = [[MPVolumeView alloc] init];
     audioRouteView.showsVolumeSlider = NO;
     audioRouteView.showsRouteButton = YES;
@@ -18,7 +19,10 @@ RCT_EXPORT_MODULE()
     [audioRouteView setRouteButtonImage:nil forState:UIControlStateFocused];
     ((UIView *)audioRouteView).clipsToBounds = YES;
 
-    return audioRouteView;
+    [wrapperView addSubview:audioRouteView];
+    wrapperView.clipsToBounds = YES;
+    
+    return wrapperView;
 }
 
 @end
