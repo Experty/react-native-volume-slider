@@ -1,5 +1,4 @@
 #import "VolumeSliderManager.h"
-#import "VolumeSlider.h"
 
 @implementation VolumeSliderManager
 
