@@ -16,8 +16,8 @@ RCT_EXPORT_MODULE()
     [audioRouteView setRouteButtonImage:nil forState:UIControlStateReserved];
     [audioRouteView setRouteButtonImage:nil forState:UIControlStateDisabled];
     [audioRouteView setRouteButtonImage:nil forState:UIControlStateFocused];
-    audioRouteView.clipToBounds = YES;
-    
+    ((UIView *)audioRouteView).clipsToBounds = YES;
+
     return audioRouteView;
 }
 
